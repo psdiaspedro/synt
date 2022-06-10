@@ -1,0 +1,486 @@
+body {
+	background-color: #222222;
+}
+
+a {
+	color: white;
+}
+
+.heading {
+	background: rgb(82,82,82, 1);
+	background: linear-gradient(0deg, rgba(82,82,82,0.11) 0%, rgba(0,0,0,0) 100%);
+	box-shadow: 0 8px 32px 0 rgba( 0, 0, 0);
+	backdrop-filter: blur( 8px );
+	-webkit-backdrop-filter: blur( 8px );
+
+	/*fixed navbar*/
+	position: fixed; /* Set the navbar to fixed position */
+	top: 0; /* Position the navbar at the top of the page */
+	width: 100%; /* Full width */
+	height: 70px;
+
+	/* flexbox */
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+/* imagem do navbar */
+.heading-logo {
+	max-width: 100%;
+	max-height: 50%;
+}
+
+.heading-nav{
+	display: flex;
+	gap: 32px;
+}
+
+.heading-anchor{
+	font-family: 'Josefin Sans', sans-serif;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 18px;
+	color: #FFFFFF;
+}
+
+.main-content{
+	max-width: 1074px;
+	margin: auto;
+}
+
+.sec-one{
+	display: flex;
+	justify-content: space-around;
+	margin-top: 150px;
+}
+
+.sec-one-first-child{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	width: 500px;
+}
+
+.sec-one-first-child h1{
+	font-family: 'Josefin Sans', sans-serif;
+	color: white;
+	font-style: normal;
+	line-height: 40px;
+	font-weight: 600;
+	font-size: 36px;
+}
+
+.sec-one-first-child p{
+	font-family: 'Josefin Sans', sans-serif;
+	color: white;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+}
+
+.sec-one img {
+	width: 42%;
+}
+
+.sec-two {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 100px;
+}
+
+.carousel {
+	width: 22%;
+	height: 200px;
+	background: #303030;
+	border-radius: 3%;
+}
+
+.carousel p{
+	font-family: 'Josefin Sans', sans-serif;
+	color: white;
+	font-style: italic;
+	font-weight: normal;
+	font-size: 18px;
+	padding: 10px;
+}
+
+.carousel img {
+	padding: 10px;
+}
+
+.sec-three{
+	margin-top: 60px;
+}
+
+.header-solucoes{
+	display: flex;
+	justify-content: flex-end;
+}
+
+.sec-three-container{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	row-gap: 40px;
+	column-gap: 40px;
+}
+
+.sec-three-container-two{
+	display: flex;
+	flex-wrap: wrap;
+	column-gap: 40px;
+	row-gap: 40px;
+	justify-content: center;
+}
+
+.container-child{
+	width: 280px;
+	height: 330px;
+	background: #303030;
+	border-radius: 3%;
+	margin-top: 40px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 20px;
+}
+
+.container-child h3 {
+	font-family: 'Josefin Sans', sans-serif;
+	color: #05E585;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 15px;
+	font-size: 17px;
+}
+
+.container-child h4 {
+	font-family: 'Josefin Sans', sans-serif;
+	color: #FFFFFF;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 24px;
+	font-size: 24px;
+}
+
+.container-child p {
+	font-family: 'Josefin Sans', sans-serif;
+	color: #FFFFFF;
+	font-style: normal;
+	font-weight: 300;
+	line-height: 19px;
+	font-size: 19px;
+}
+
+.sec-four{
+	display:flex;
+	justify-content: space-between;
+	margin-top: 100px;
+}
+
+.sec-four-container{
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 430px;
+}
+
+.sec-four-container p{
+	font-family: 'Josefin Sans', sans-serif;
+	color: #FFFFFF;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 23px;
+	font-size: 23px;
+}
+
+.img-davi{
+	max-width:570px;
+    max-height:540px;
+}
+
+.sec-five{
+	margin-top: 75px;
+}
+
+.imagem-titulo{
+	margin-bottom: -100px;
+}
+
+.sabre{
+	/* max-width:570px;
+    max-height:540px;
+    width: auto;
+    height: auto; */
+	max-width: 1080px;
+    max-height: 600;
+}
+
+.sec-six{
+	display: flex;
+	flex-direction: column;
+}
+
+.sec-six h3{
+	font-family: 'Josefin Sans', sans-serif;
+	color: #05E585;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 29px;
+	font-size: 33px;
+}
+
+.sec-six-container-1{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 80px
+}
+
+.sec-six-container{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+
+.sec-six-container-child{
+	width: 390px;
+	height: 204px;
+	background: #303030;
+	border-radius: 3%;
+	margin-top: 40px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	padding: 20px;
+}
+
+.sec-six-container-child h4{
+	font-family: 'Josefin Sans', sans-serif;
+	color: #FFFFFF;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 25px;
+	font-size: 25px;
+}
+
+.sec-six-container-child p{
+	font-family: 'Josefin Sans', sans-serif;
+	color: #FFFFFF;
+	font-style: normal;
+	font-weight: 300;
+	line-height: 19px;
+	font-size: 19px;
+}
+
+.btn-soluções{
+	margin-top: 40px;
+	display: flex;
+	justify-content: center;
+}
+
+.btn-pq{
+	margin-top: 40px;
+}
+
+.sec-seven{
+	margin-top: 200px;
+}
+
+.sec-seven-container{
+	margin-top: 55px;
+	display: flex;
+	justify-content: space-evenly;
+
+}
+
+.sec-seven-container2{
+	width: 400px;
+	height: 460px;
+}
+
+.sec-seven-container2 p{
+	font-family: 'Josefin Sans', sans-serif;
+	color: #FFFFFF;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 26px;
+	font-size: 23px;
+}
+
+.sec-seven-container2 p:nth-child(3){
+	font-family: 'Josefin Sans', sans-serif;
+	color: #05E585;
+	font-style: normal;
+	font-weight: 700;
+	line-height: px;
+	font-size: 24px;
+}
+
+.sec-seven-container3{
+	display: flex;
+	justify-content: space-between;
+}
+
+.sec-seven-container3 p{
+	font-family: 'Josefin Sans', sans-serif;
+	color: #05E585;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 19px;
+	font-size: 17px;
+}
+
+.sec-eight{
+	margin-top: 200px;
+}
+
+.accordion {
+	background-color: #303030;
+	color: #FFFFFF;
+	cursor: pointer;
+	padding: 18px;
+	width: 100%;
+	text-align: left;
+	border: none;
+	outline: none;
+	transition: 0.4s;
+	font-family: 'Josefin Sans';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 18.1422px;
+	border-radius: 4px;
+	margin-top: 17px;
+}
+
+/* .active, .accordion:hover {
+	background-color: #ccc;
+} */
+
+.panel {
+	background-color: #303030;
+	border-radius: 0 0 4px 4px;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.2s ease-out;
+}
+
+.panel p{
+	font-family: 'Josefin Sans';
+	color: #FFFFFF;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 14px;
+	padding: 0 18px;
+}
+
+.accordion:after {
+	content: '+'; /* Unicode character for "plus" sign (+) */
+	font-size: 18px;
+	color: #FFFFFF;
+	float: right;
+	margin-left: 5px;
+}
+
+.active{
+	border-radius: 4px 4px 0 0;
+}
+
+.active:after {
+	content: "\−"; /* Unicode character for "minus" sign (-) */
+}
+
+.container{
+	display: flex;
+	flex-direction: column;
+	margin-top: 50px;
+}
+
+.sec-nine-container{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.footing{
+	margin-top: 125px;
+	box-shadow: 0 8px 32px 0 rgba( 0, 0, 0);
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 220px;
+}
+
+footer img
+
+.footer-nav{
+	display: flex;
+	gap: 32px;
+}
+
+/* .footer-container{
+	border: 1px solid red;
+	height: 220px;
+	max-width: 1074px;
+	margin: auto;
+} */
+
+
+.footer-anchor{
+	font-family: 'Josefin Sans', sans-serif;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 18px;
+	color: #FFFFFF;
+}
+
+.btn-duvida{
+	margin-top: 40px;
+}
+
+.btn{
+	width: 275px;
+	height: 50px;
+	background-color: #05E585;
+	font-family: 'Josefin Sans', sans-serif;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 20px;
+	border-radius: 5px;
+	border: none;
+	color: #000000;
+}
+
+/* mobile para telas até 480px */
+@media screen and (max-width: 480px) {
+	body {
+		background-color: #4e42f5;
+	}
+}
+
+/*tablet para telas até 900px*/
+@media only screen and (min-width:481px) and (max-width:900px) {
+	body {
+		background-color: #75f542;
+	}
+}
+
+/*desktop para telas até infinito (?)*/
+@media only screen and (min-width:901px){
+	.heading {
+		background: rgb(82,82,82, 1);
+		background: linear-gradient(0deg, rgba(82,82,82,0.11) 0%, rgba(0,0,0,0) 100%);
+		box-shadow: 0 8px 32px 0 rgba( 0, 0, 0);
+		backdrop-filter: blur( 8px );
+		-webkit-backdrop-filter: blur( 8px );
+
+		/*fixed navbar*/
+		position: fixed; /* Set the navbar to fixed position */
+		top: 0; /* Position the navbar at the top of the page */
+		width: 100%; /* Full width */
+		height: 70px;
+	}
+}
+
