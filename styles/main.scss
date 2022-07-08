@@ -1,0 +1,651 @@
+//Overrides variables (must come before import)
+
+$accordion-icon-color: #FFFFFF;
+$accordion-bg: #303030;
+$accordion-border-color: #303030;
+$accordion-icon-active-color: #FFFFFF;
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap');
+
+// Functions
+
+@function rem-calc($size) {
+	$value: $size / 16;
+	@return #{$value}rem;
+}
+
+// Colors Pallets
+
+$dark-gray: #222222;
+$green: #05E585;
+$medium-gray: #303030;
+$light-gray: #9B9B9B;
+$gray: #525252;
+$white: #FFFFFF;
+$black: #000000;
+
+body {
+	background-color: $dark-gray;
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+.titulo {
+	font-size: rem-calc(34);
+	color: $green;
+	font-weight: 700;
+}
+
+.btn-primary {
+    --bs-btn-color: $black;
+    --bs-btn-bg: #05E585;
+    --bs-btn-border-color: #05E585;
+    --bs-btn-hover-color: $black;
+    --bs-btn-hover-bg: #23fa9e;
+    --bs-btn-hover-border-color: #23fa9e;
+    --bs-btn-focus-shadow-rgb: 49, 132, 253;
+    --bs-btn-active-color: $black;
+    --bs-btn-active-bg: #05E585;
+    --bs-btn-active-border-color: #05E585;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #05E585;
+    --bs-btn-disabled-border-color: #05E585;
+}
+
+.botao {
+	a {
+		font-size: rem-calc(15);
+		font-weight: 500;
+	}
+}
+//header
+.navbar {
+	background: linear-gradient(0deg, rgba(82,82,82,0.11) 0%, rgba(0,0,0,0) 100%);
+	backdrop-filter: blur( 8px );
+	box-shadow: 0 rem-calc(3) rem-calc(40) 1px rgba( 0, 0, 0);
+	-webkit-backdrop-filter: blur( 8px );
+
+	a {
+		color: $white;
+	}
+}
+
+// Intro Layout
+
+.introducao {
+	margin-top: 90px;
+}
+
+h1 {
+	font-size: rem-calc(20);
+	font-weight: 600;
+	color: $white;
+}
+
+.green-text {
+	color: $green;
+}
+
+.intro {
+	p {
+		font-size: rem-calc(14);
+		font-weight: 400;
+		color: $white;
+	}
+}
+
+// Carrousel Layout
+
+.my-carrousel {
+	p {
+		color: $white;
+		font-size: rem-calc(12);
+	}
+
+	.card {
+		height: rem-calc(140);
+	}
+}
+
+.owl-nav{
+	span {
+		color: $white;
+	}
+}
+
+// Card System Layout - Soluções, Porque Contratar a Synthesis?
+
+.card {
+	background-color: $medium-gray;
+}
+
+.card-title {
+	font-size: rem-calc(17);
+	font-weight: 700;
+	color: $white;
+}
+
+.card-subtitle {
+	font-size: rem-calc(14);
+	font-weight: 300;
+	color: $light-gray;
+}
+
+.card-text-green {
+	font-size: rem-calc(12);
+	font-weight: 400;
+	color: $green;
+}
+
+.card-text-normal {
+	font-size: rem-calc(12);
+	font-weight: 300;
+	color: $white;
+}
+
+.solucoes {
+	p {
+		font-size: rem-calc(15);
+		color: $white;
+	}
+}
+
+//Sobre Nós Layout
+
+.sobre-nos {
+	p {
+		color: $white;
+		font-size: rem-calc(16);
+	}
+}
+
+// Jornada do Cliente Layout
+
+.sabre {
+	margin-top: -20px;
+}
+
+// Atendimento Layout
+
+.atendimento {
+	p {
+		color: $white;
+	}
+
+	.white-p {
+		font-size: rem-calc(17);
+	}
+
+	.ajuda-duvidas {
+		font-size: rem-calc(15);
+	}
+
+	.comando {
+		font-size: rem-calc(17);
+	}
+
+}
+
+// Accordion Style
+
+.accordion {
+    --bs-accordion-border-color: #{$accordion-border-color};
+    --bs-accordion-btn-color: #{$white};
+
+
+    --bs-accordion-btn-focus-border-color: #FFFFFF;
+    --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem rgba(30, 30, 30, 0.808);
+
+    --bs-accordion-active-color: #FFFFFF;
+    --bs-accordion-active-bg: #303030
+}
+
+.accordion-item {
+	margin-top: rem-calc(15);
+}
+
+// Duvida Layout
+
+.duvida {
+	h2 {
+		color: $gray;
+	}
+}
+
+@include media-breakpoint-up(sm) {
+	body {
+		background-color: $dark-gray;
+	}
+
+	.titulo {
+		font-size: rem-calc(45);
+		color: $green;
+		font-weight: 700;
+	}
+
+	.botao {
+		a {
+			font-size: rem-calc(17);
+		}
+	}
+
+	// Intro Layout
+
+	h1 {
+		font-size: rem-calc(22);
+		font-weight: 600;
+		color: $white;
+	}
+
+	.intro {
+		p {
+			font-size: rem-calc(11);
+			font-weight: 400;
+			color: $white;
+		}
+	}
+
+	// Card System Layout - Soluções, Porque Contratar a Synthesis?
+	.card {
+		background-color: $medium-gray;
+		height: rem-calc(190);
+	}
+
+	.card-type-2 {
+		height: rem-calc(180);
+	}
+
+	.card-title {
+		font-size: rem-calc(18);
+		font-weight: 700;
+		color: $white;
+	}
+
+	.card-subtitle {
+		font-size: rem-calc(12);
+		font-weight: 300;
+		color: $light-gray;
+	}
+
+	.card-text-green {
+		font-size: rem-calc(11);
+		font-weight: 400;
+		color: $green;
+	}
+
+	.card-text-normal {
+		font-size: rem-calc(12);
+		font-weight: 300;
+		color: $white;
+	}
+
+	.sabre {
+		margin-top: -40px;
+	}
+
+	// Duvida Layout
+
+	.duvida {
+		a {
+			font-size: rem-calc(20);
+		}
+	}
+
+
+}
+
+@include media-breakpoint-up(md) {
+	body {
+		background-color: $dark-gray;
+	}
+
+	.titulo {
+		font-size: rem-calc(64);
+		color: $green;
+		font-weight: 700;
+	}
+
+	// Intro Layout
+
+	h1 {
+		font-size: rem-calc(24);
+		font-weight: 600;
+		color: $white;
+	}
+
+	.intro {
+		p {
+			font-size: rem-calc(12);
+			font-weight: 400;
+			color: $white;
+		}
+	}
+
+	// Carrousel Layout
+
+	.my-carrousel {
+		p {
+			color: $white;
+			width: 500;
+		}
+
+		.card {
+			height: rem-calc(140);
+		}
+	}
+
+	.owl-nav{
+		span {
+			color: $white;
+		}
+	}
+
+	// Card System Layout - Soluções, Porque Contratar a Synthesis?
+
+	.card {
+		background-color: $medium-gray;
+		height: rem-calc(250);
+	}
+
+	.card-type-2 {
+		height: rem-calc(150);
+	}
+
+	.card-title {
+		font-size: rem-calc(19);
+		font-weight: 700;
+		color: $white;
+	}
+
+	.card-subtitle {
+		font-size: rem-calc(12);
+		font-weight: 300;
+		color: $light-gray;
+	}
+
+	.card-text-green {
+		font-size: rem-calc(12);
+		font-weight: 400;
+		color: $green;
+	}
+
+	.card-text-normal {
+		font-size: rem-calc(12);
+		font-weight: 300;
+		color: $white;
+	}
+
+	.solucoes {
+		p {
+			font-size: rem-calc(18);
+			color: $white;
+		}
+	}
+
+	//Sobre Nós Layout
+
+	.sobre-nos {
+		p {
+			color: $white;
+			font-size: rem-calc(16);
+		}
+	}
+
+	// Atendimento Layout
+
+	.atendimento {
+		p {
+			color: $white;
+		}
+
+		.white-p {
+			font-size: rem-calc(17);
+		}
+
+		.ajuda-duvidas {
+			font-size: rem-calc(15);
+		}
+
+		.comando {
+			font-size: rem-calc(17);
+		}
+
+	}
+
+}
+
+@include media-breakpoint-up(lg) {
+	body {
+		background-color: $dark-gray;
+	}
+
+	// Intro Layout
+
+	h1 {
+		font-size: rem-calc(30);
+		font-weight: 600;
+		color: $white;
+	}
+
+	.intro {
+		p {
+			font-size: rem-calc(16);
+			font-weight: 400;
+			color: $white;
+		}
+	}
+
+	.titulo {
+		font-size: rem-calc(70);
+		color: $green;
+		font-weight: 700;
+	}
+
+	// Carrousel Layout
+
+	.my-carrousel {
+		p {
+			color: $white;
+			font-size: rem-calc(15);
+		}
+
+		.card {
+			height: rem-calc(140);
+		}
+	}
+
+	.owl-nav{
+		span {
+			color: $white;
+		}
+	}
+
+
+	// Card System Layout - Soluções, Porque Contratar a Synthesis?
+
+	.card {
+		background-color: $medium-gray;
+		height: rem-calc(260);
+	}
+
+	.card-type-2 {
+		height: rem-calc(180);
+	}
+
+	.card-title {
+		font-size: rem-calc(22);
+		font-weight: 700;
+		color: $white;
+	}
+
+	.card-subtitle {
+		font-size: rem-calc(15);
+		font-weight: 300;
+		color: $light-gray;
+	}
+
+	.card-text-green {
+		font-size: rem-calc(14);
+		font-weight: 400;
+		color: $green;
+	}
+
+	.card-text-normal {
+		font-size: rem-calc(16);
+		font-weight: 300;
+		color: $white;
+	}
+
+	//Sobre Nós Layout
+
+	.sobre-nos {
+		p {
+			color: $white;
+			font-size: rem-calc(19);
+		}
+	}
+
+	// Atendimento Layout
+
+	.atendimento {
+		p {
+			color: $white;
+		}
+
+		.white-p {
+			font-size: rem-calc(19);
+		}
+
+		.ajuda-duvidas {
+			font-size: rem-calc(19);
+		}
+
+		.comando {
+			font-size: rem-calc(19);
+		}
+
+	}
+
+}
+
+@include media-breakpoint-up(xxl) {
+	body {
+		background-color: $dark-gray;
+	}
+
+	h1 {
+		font-size: rem-calc(36);
+		font-weight: 600;
+		color: $white;
+	}
+
+	.intro {
+		p {
+			font-size: rem-calc(18);
+			font-weight: 400;
+			color: $white;
+		}
+	}
+
+	.titulo {
+		font-size: rem-calc(90);
+		color: $green;
+		font-weight: 700;
+	}
+
+	// Carrousel Layout
+
+	.my-carrousel {
+		p {
+			color: $white;
+			font-size: rem-calc(18);
+		}
+
+		.card {
+			height: rem-calc(180);
+		}
+	}
+
+	.owl-nav{
+		span {
+			color: $white;
+		}
+	}
+
+	// Card System Layout - Soluções, Porque Contratar a Synthesis?
+
+	.card {
+		background-color: $medium-gray;
+		height: rem-calc(270);
+	}
+
+	.card-type-2 {
+		height: rem-calc(170);
+	}
+
+	.card-title {
+		font-size: rem-calc(24);
+		font-weight: 700;
+		color: $white;
+	}
+
+	.card-subtitle {
+		font-size: rem-calc(20);
+		font-weight: 300;
+		color: $light-gray;
+	}
+
+	.card-text-green {
+		font-size: rem-calc(18);
+		font-weight: 400;
+		color: $green;
+	}
+
+	.card-text-normal {
+		font-size: rem-calc(19);
+		font-weight: 300;
+		color: $white;
+	}
+
+	.solucoes {
+		p {
+			font-size: rem-calc(24);
+			color: $white;
+		}
+	}
+
+	//Sobre Nós Layout
+
+	.sobre-nos {
+		p {
+			color: $white;
+			font-size: rem-calc(24);
+		}
+	}
+
+	.sabre {
+		margin-top: -100px;
+	}
+
+	// Atendimento Layout
+
+	.atendimento {
+		p {
+			color: $white;
+		}
+
+		.white-p {
+			font-size: rem-calc(24);
+		}
+
+		.ajuda-duvidas {
+			font-size: rem-calc(24);
+		}
+
+		.comando {
+			font-size: rem-calc(24);
+		}
+
+	}
+}
