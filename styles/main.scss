@@ -178,6 +178,11 @@ h1 {
 	}
 }
 
+//Sobre Nós Layout
+	.img-sobre-nos {
+		max-width: rem-calc(300);
+	}
+
 // Jornada do Cliente Layout
 
 .sabre {
@@ -187,6 +192,11 @@ h1 {
 // Atendimento Layout
 
 .atendimento {
+
+	.row {
+		margin-top: 50px;
+	}
+
 	p {
 		color: $white;
 	}
@@ -230,6 +240,28 @@ h1 {
 		color: $gray;
 	}
 }
+
+//Footer Layout
+footer {
+	box-shadow: 0 rem-calc(3) rem-calc(40) 1px rgba( 0, 0, 0);
+
+	.container {
+		padding-top: rem-calc(50);
+	}
+
+	li {
+		img {
+			width: rem-calc(15);
+		}
+	}
+
+	.navbar-brand {
+		img {
+			width: rem-calc(150);
+		}
+	}
+}
+
 
 @include media-breakpoint-up(sm) {
 	body {
@@ -317,15 +349,35 @@ h1 {
 		color: $white;
 	}
 
+
+
+	//Jornada Do Cliente
+
 	.sabre {
 		margin-top: -40px;
 	}
+
 
 	// Duvida Layout
 
 	.duvida {
 		a {
 			font-size: rem-calc(20);
+		}
+	}
+
+	//Footer Layout
+	footer {
+		li {
+			img {
+				width: rem-calc(20);
+			}
+		}
+
+		.navbar-brand {
+			img {
+				width: rem-calc(250);
+			}
 		}
 	}
 
@@ -429,6 +481,7 @@ h1 {
 		}
 	}
 
+
 	// Atendimento Layout
 
 	.atendimento {
@@ -449,6 +502,22 @@ h1 {
 		}
 
 	}
+
+	//Footer Layout
+	footer {
+		li {
+			img {
+				width: rem-calc(20);
+			}
+		}
+
+		.navbar-brand {
+			img {
+				width: rem-calc(250);
+			}
+		}
+	}
+
 
 }
 
@@ -549,6 +618,10 @@ h1 {
 		}
 	}
 
+	.img-sobre-nos {
+		max-width: rem-calc(400);
+	}
+
 	// Atendimento Layout
 
 	.atendimento {
@@ -568,6 +641,21 @@ h1 {
 			font-size: rem-calc(19);
 		}
 
+	}
+
+	//Footer Layout
+	footer {
+		li {
+			img {
+				width: rem-calc(20);
+			}
+		}
+
+		.navbar-brand {
+			img {
+				width: rem-calc(300);
+			}
+		}
 	}
 
 }
@@ -665,7 +753,14 @@ h1 {
 			color: $white;
 			font-size: rem-calc(24);
 		}
+
 	}
+
+	.img-sobre-nos {
+		max-width: rem-calc(500);
+	}
+
+	//Jornada do Cliente Layout
 
 	.sabre {
 		margin-top: -100px;
@@ -691,4 +786,21 @@ h1 {
 		}
 
 	}
+
+	//Footer Layout
+	footer {
+		li {
+			img {
+				width: rem-calc(20);
+			}
+		}
+
+		.navbar-brand {
+			// img {
+			// 	width: rem-calc(300);
+			// }
+		}
+	}
+
+
 }
